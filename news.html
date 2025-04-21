@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News - Pieta Group of Schools</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background-color: #001f3f;
+            color: white;
+            padding: 20px;
+        }
+
+        nav a {
+            color: orange;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .hero {
+            position: relative;
+            background: url("hero.jpg") center center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5); /* fade overlay */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+        }
+
+        .news-section {
+            padding: 40px 20px;
+            color: #001f3f;
+        }
+
+        .news-section h3 {
+            text-align: center;
+        }
+
+        .news-article {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-article h4 {
+            color: #001f3f;
+        }
+
+        .news-article p {
+            color: #333;
+        }
+
+        .news-article a {
+            color: orange;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .news-article a:hover {
+            color: darkorange;
+        }
+
+        footer {
+            background-color: #001f3f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png" alt="Pieta Logo" style="height: 50px; vertical-align: middle;">
+        <h1 style="display: inline-block; margin-left: 10px;">Pieta Group of Schools</h1>
+        <nav style="margin-top: 15px;">
+            <a href="home.html">Home</a>
+            <a href="result.html">Check Results</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="complaints.html">Complaint</a>
+            <a href="news.html">News</a>
+            <a href="result_upload.html">Upload Result</a>
+            <a href="Admission.html">Admission</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Latest News & Updates</h2>
+            <p>Stay updated with the latest happenings at Pieta Group of Schools.</p>
+        </div>
+    </section>
+
+    <section class="news-section">
+        <h3>Our Latest News</h3>
+
+        <div class="news-article">
+            <h4>Annual Sports Day</h4>
+            <p>The 2025 Annual Sports Day was a huge success with exciting inter-house competitions and awards. The students demonstrated excellent sportsmanship and enthusiasm.</p>
+            <a href="/news/sports-day">Read more...</a>
+        </div>
+
+        <div class="news-article">
+            <h4>Graduation Ceremony</h4>
+            <p>We celebrated the graduation of our senior students with a memorable ceremony, filled with speeches, performances, and heartfelt moments.</p>
+            <a href="/news/graduation-ceremony">Read more...</a>
+        </div>
+
+        <div class="news-article">
+            <h4>New School Year Begins</h4>
+            <p>The 2025 academic year has started, with new students joining and exciting learning programs in place for all grades. We're ready for another amazing year!</p>
+            <a href="/news/school-year-2025">Read more...</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Pieta Group of Schools. All rights reserved.
+    </footer>
+
+</body>
+</html>
